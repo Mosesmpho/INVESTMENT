@@ -4,12 +4,13 @@ using namespace std;
 int main() {
 
     int years = 1;
-    float Balance = 0;
+    double Balance = 1000;
 
     while (years < 19) {
 
-        Balance += 5000;
-        years++;
+        Balance += Balance * 0.045;
+        Balance += 500;
+        years ++;
 
     }
     cout << Balance;
